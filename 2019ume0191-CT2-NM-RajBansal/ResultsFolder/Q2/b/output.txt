@@ -1,0 +1,2 @@
+Using simpson's 1/3 rule
+335.07666666666665

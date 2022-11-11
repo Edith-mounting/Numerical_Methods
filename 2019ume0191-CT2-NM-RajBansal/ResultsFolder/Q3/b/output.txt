@@ -1,0 +1,5 @@
+Using RK4 method
+For h = 2, the value of y =  -2.1562497243065667e+44
+For h = 1, the value of y =  0.09941644936072136
+For h = 0.5, the value of y =  0.10000207669511678
+For h = 0.25, the value of y =  0.10000046593914794

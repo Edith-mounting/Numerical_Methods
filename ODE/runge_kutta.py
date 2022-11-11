@@ -1,7 +1,5 @@
-def f_x(x, y):
-    return 4*x*x*x + 3*x*x + 2*x + 1
 
-def RK4( xi, xf, dx, yi):
+def RK4( xi, xf, dx, yi, f_x):
     while( xi < xf):
         k1 = f_x( xi, yi)
         k2 = f_x( xi + dx/2, yi + (k1*dx)/2)
@@ -11,5 +9,5 @@ def RK4( xi, xf, dx, yi):
         xi = xi + dx
     return yi
 
-print(RK4( 0, 10, 1, 0))
-print(RK4( 0, 10, 10, 0))
+# print(RK4( 0, 10, 1, 0, f_x))
+# print(RK4( 0, 10, 10, 0, f_x))

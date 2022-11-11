@@ -1,0 +1,5 @@
+Using euler's method
+For h = 2, the value of y =  -903.0
+For h = 1, the value of y =  0.0
+For h = 0.5, the value of y =  0.08742964766922952
+For h = 0.25, the value of y =  0.09410507241557567
