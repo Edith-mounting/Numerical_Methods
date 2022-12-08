@@ -34,12 +34,14 @@ def f_Q2_cal( a):
 #Don't forget to include -1 while calculating function using values
 # file = open("input.txt",'r')
 # x_initial = file.read()
-x_initial = [ 0, 2, 3]
-n = 3
-x_final = coupled_linear_equ( x_initial, n, f_Q1_cal, f_Q1_dash)
-y_final = f_Q1_cal(x_final)
-for i in range( 0, n):
-    print( y_final[i])
+
+# x_initial = [ 0, 2, 3]
+# n = 3
+# x_final = coupled_linear_equ( x_initial, n, f_Q1_cal, f_Q1_dash)
+# y_final = f_Q1_cal(x_final)
+# for i in range( 0, n):
+#     print( y_final[i])
+
 # x_initial = [ 0, 1, 2]
 # n = 3
 # x_final = coupled_linear_equ( x_initial, n, f_Q2_cal, f_Q2_dash)
@@ -47,3 +49,22 @@ for i in range( 0, n):
 # for i in range( 0, n):
 #     print( y_final[i])
 
+def f_Q_cal( a):
+    x = a[0]
+    y = a[1]
+    z = a[2]
+    p = a[3]
+    return [(-1)*(x*y*(y-z) + y*z*(z - x) + z*x*(x - y) - 10),
+        (-1)*(x*y*z*(x + y + z - 4) - 120),
+        (-1)*((x-y)**2*z + (y-z)**2*x + (z - x)**2*y - 2*(x + y + z)),
+        (-1)*(x*y*z - x - y - z - p)]
+
+# def f_Q_dash( a):
+#     x = a[0]
+#     y = a[1]
+#     z = a[2]
+#     p = a[3]
+#     return [[y*(y - z) ]]
+# x_initial = [ 5, 6, 7, 10]
+# n = 4
+# x_final = coupled_linear_equ( x_initial, n)

@@ -1,5 +1,5 @@
 def dy_dx( x, y):
-    return -(y*y/x*x)
+    return -1*((y*y)/(x*x))
 
 def euler( xi, xf, h, yi):
     while(abs( xi - xf) >= h):

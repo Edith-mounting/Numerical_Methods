@@ -1,5 +1,5 @@
 def dy_dx( x, y):
-    return (-1*y*y/x*x)
+    return ((-1*y*y)/(x*x))
 
 def RK4( xi, xf, h, yi):
     while( abs( xi - xf) >= h):

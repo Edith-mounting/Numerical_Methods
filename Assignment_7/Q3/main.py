@@ -81,9 +81,15 @@ def RK4( ti, tf, h, xi, yi, dx_dt, dy_dt):
         t_current = t_current + h
     print(x_current, " ", y_current)
 
-print("Results for Q3")
-euler( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
-heun( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
-midpoint( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
-ralston( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
-RK4( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+# print("Results for Q3")
+# euler( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+# heun( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+# midpoint( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+# ralston( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+# RK4( 0, 2, 0.5, 4, 6, dx_dt, dy_dt)
+
+# def dx_dt1(x, y, t):
+#     return 0
+# def dy_dt1(x, y, t):
+#     return -1*(y*y/t*t)
+# euler( 1, 10, 0.5, 0, 1, dx_dt1, dy_dt1)

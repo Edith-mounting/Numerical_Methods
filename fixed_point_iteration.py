@@ -5,3 +5,8 @@ def Fixed_Point_Iteration_method(g_x, xi):
         if(abs(x_i_plus_one - xi) < pow( 10, -5)):
             return x_i_plus_one
         xi = x_i_plus_one
+
+def g_x(x):
+    return (3*x*x - x*x*x)/2
+
+print(Fixed_Point_Iteration_method(g_x, 0.1))
