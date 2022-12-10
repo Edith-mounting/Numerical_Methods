@@ -1,0 +1,48 @@
+maximum values of n for each interval for F = 0.1
+5
+5
+3
+5
+5
+5
+3
+5
+5
+5
+2
+maximum values of n for each interval for F = 1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+maximum values of n for each interval for F = 10
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+maximum values of n for each interval for F = 100
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2

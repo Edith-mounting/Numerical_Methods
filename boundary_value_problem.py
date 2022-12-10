@@ -1,8 +1,13 @@
 from gauss_elimination_with_partial_pivoting import gauss_elimination_with_partial_pivoting
-
 def previousYearQuestion(intervals, h_infinity, t_infinity, b, k, q):
     h = b/intervals
     n = intervals + 1
+    length = []
+    temp = 0
+    for i in range( 0, n):
+        length.append(temp)
+        temp += h
+    # print(length)
     mat = [[0 for i in range(0, n)] for j in range(0, n)]
     b = [0 for i in range(0, n)]
     mat[0][0] = -1
@@ -10,7 +15,7 @@ def previousYearQuestion(intervals, h_infinity, t_infinity, b, k, q):
     b[0] = 0
     mat[n-1][n - 2] = 1
     mat[n-1][n-1] = -1*(1 + (h*h_infinity))
-    print(h)
+    # print(h)
     b[n-1] = -1*(h*h_infinity*t_infinity)/k
     for i in range( 1, n - 1):
         mat[i][i] = -2
@@ -18,12 +23,16 @@ def previousYearQuestion(intervals, h_infinity, t_infinity, b, k, q):
         mat[i][i+1] = 1
         b[i] = -1*(q*h*h)/k
         # print(b[i])
-    print(mat)
-    print(b)
+    # print(mat)
+    # print(b)
     temp = gauss_elimination_with_partial_pivoting( mat, n, b)
+    
     print(temp)
-
+print("temperature for 5 iterations")
 previousYearQuestion(5, 100.0, 10.0, 0.01, 1.0, 400000.0)
-# previousYearQuestion(10, 100, 10, 0.1, 1, 400000)
-# previousYearQuestion(20, 100, 10, 0.1, 1, 400000)
-# previousYearQuestion(30, 100, 10, 0.1, 1, 400000)
+print("temperature for 10 iterations")
+previousYearQuestion(10, 100, 10, 0.01, 1, 400000)
+print("temperature for 20 iterations")
+previousYearQuestion(20, 100, 10, 0.01, 1, 400000)
+print("temperature for 30 iterations")
+previousYearQuestion(30, 100, 10, 0.01, 1, 400000)
