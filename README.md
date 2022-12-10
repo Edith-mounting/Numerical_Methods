@@ -1,7 +1,7 @@
 # Numerical_Methods
 Useful Numerical Method optimized codes
 Here You can find code for:
-  Fixed Point Interation Method
+  Fixed Point Interation Method  
   Regular Falsi Method
   Newton-Raphson Method
   Bisection Method
